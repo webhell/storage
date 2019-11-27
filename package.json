@@ -1,0 +1,25 @@
+{
+  "name": "@webhell/storage",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "git@https://github.com/webhell/storage.git",
+  "author": "sai <hoosai@163.com>",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "start": "tsc --watch",
+    "build": "npm run clean && npm run compile",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "gts": "^1.1.2",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}
